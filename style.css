@@ -1,0 +1,303 @@
+@font-face {
+    font-family: "aeros";
+    src: url(fonts/Aeros/Aeros.ttf);
+}
+
+@font-face {
+    font-family: "ubuntuC";
+    src: url(fonts/UbuntuCondensed/UbuntuCondensed-Regular.ttf);
+}
+
+@font-face {
+    font-family: "ubuntu";
+    src: url(fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+
+body {
+    width: 1309px;
+    margin: 0 auto;
+}
+
+#fond{
+    background-image: url("./images/banniere.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1309px;
+    height: 380px;
+    margin: 0 auto;
+}
+
+#titre{
+    display: none;
+    color: #FBFBFB;
+    font-family: "aeros";
+    font-size: 50px;
+    text-align: right;
+    position: relative;
+    top: 60px;
+    right: 60px;
+}
+
+#headerDown{
+    display: block;
+    position: relative;
+    bottom: 16px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;;
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+li{
+    font-family: 'ubuntuC';
+    padding: 14px;
+    font-size: 20px;
+}
+
+li:hover {
+    border-top:  5px solid black;
+  }
+
+#barre i{
+    font-size: 20px;
+}
+
+.search{
+    height: 40px;
+    width: 250px;
+    background-color: #7D7C7C;
+    opacity: 80%;
+    color: #FBFBFB;
+}
+
+#separation{
+    position: relative;
+    bottom: 30px;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+#deuxphrase{
+    font-family: "unbuntu";
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+section{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+section div{
+    width: 300px;
+    height: 400px;
+}
+
+section img{
+    width: 300px;
+    height: 175px;
+}
+
+section div p{
+    font-family: "ubuntu";
+    font-size: 20px;
+    text-align: justify;
+}
+
+#logo{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#logo i{
+    font-size: 75px;
+    padding: 10px;
+}
+
+#separationDeux{
+    width: 100%;
+    height: 10px;
+    background-color: black;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+
+    body {
+        width: 1025px;
+        margin: 0 auto;
+    }
+
+    #fond{
+        width: 1025px;
+        height: 284px;
+    }
+        
+   
+    #titre{
+        font-size: 40px;
+        position: relative;
+        top: 45px;
+        right: 70px;
+    }
+
+    li{
+        padding: 14px;
+        font-size: 18px;
+    }
+    
+    .search{
+        height: 35px;
+        width: 200px;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    section div{
+        width: 300px;
+        height: 400px;
+    }
+    
+    section img{
+        width: 300px;
+        height: 175px;
+    }
+    
+    section div p{
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+
+    body {
+        width: 766px;
+        margin: 0 auto;
+    }
+
+    #fond{
+        width: 766px;
+        height: 217px;
+    }
+        
+   
+    #titre{
+        font-size: 25px;
+        position: relative;
+        top: 55px;
+        right: 40px;
+    }
+
+    li{
+        padding: 14px;
+        font-size: 18px;
+    }
+    
+    .search{
+        height: 30px;
+        width: 175px;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    section div{
+        width: 250px;
+        height: 350px;
+    }
+    
+    section img{
+        width: 250px;
+        height: 125px;
+    }
+    
+    section div p{
+        font-size: 18px;
+    }
+
+}
+
+
+@media screen and (min-width: 1px) and (max-width: 374px) {
+
+    body {
+        width: 374px;
+        margin: 0 auto;
+    }
+
+    #fond{
+        width: 373px;
+        height: 109px;
+    }
+        
+   
+    #titre{
+        font-size: 20px;
+        position: relative;
+        top: 15px;
+        right: 10px;
+    }
+
+    li{
+        padding: 2px;
+        font-size: 10px;
+    }
+    
+    .search{
+        height: 20px;
+        width: 75px;
+    }
+
+    #barre i{
+        font-size: 12px;
+    }
+
+    #deuxphrase{
+        font-size: 14px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    section div{
+        width: 250px;
+        height: 300px;
+    }
+    
+    section img{
+        width: 250px;
+        height: 125px;
+    }
+    
+    section div p{
+        font-size: 14px;
+    }
+
+}/*Code css ici*/
